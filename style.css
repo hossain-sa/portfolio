@@ -189,21 +189,26 @@ header {
   padding: 40px 0;
 }
 
-header h1 {
-  width: 50%;
-  display: flex;
-}
-
 header nav {
-  width: 50%;
+  flex: 1;
 }
 
 header nav ul {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: right;
   align-items: flex-end;
   height: 2.5rem;
+}
+
+header nav ul li:after {
+  content: "|";
+  margin: 0.5rem;
+}
+
+header nav ul li:last-child:after {
+  content: "";
+  margin: 0;
 }
 
 /*=================== main styles ===================*/
@@ -211,34 +216,81 @@ main {
   display: flex;
   flex-direction: column;
   flex: 1;
+  gap: 1rem;
+}
+
+main section {
+  display: flex;
+  flex-direction: column;
 }
 
 main section .section-title {
   display: flex;
   justify-content: space-between;
-  gap: 20px;
   align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
 }
 
-/* main section .section-title h2 {
+main section .section-title h2 {
   width: fit-content;
-} */
+}
 
 main section .section-title p {
   height: 1.6rem;
   flex: 1;
   background-color: #888888;
+}
 
+main section .section-body {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+main section .section-body .section-body-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 1;
+}
+
+main section .section-body .section-body-text p {
+  line-height: 1.5rem;
+}
+
+main section .section-body .section-body-media {
+  display: flex;
+  max-width: 250px;
+}
+
+main section .section-body .section-body-media {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+main section .section-body .section-body-media img {
+  height: 100%;
+  border-radius: 5%;
+  transform: scale(-1, 1);
+  margin-top: -6%;
+}
+
+main section .section-body .section-body-media figcaption {
+  text-align: center;
 }
 
 /*=================== footer styles ===================*/
 footer {
-  margin-top: auto;
+  margin-top: 20px;
   width: 100%;
   display: flex;
-  padding: 10px;
+  padding: 40px 0 20px 0;
   justify-content: center;
   align-items: center;
+  border-top: 2px solid #888888;
 }
 
 footer p {
