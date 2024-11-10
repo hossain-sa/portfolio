@@ -1,7 +1,7 @@
 /*=================== fonts ===================*/
 
 @import url("https://fonts.googleapis.com/css2?family=Proza+Libre:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 /*=================== proza libre ===================*/
 .proza-libre-regular {
@@ -65,63 +65,63 @@
 }
 
 /*=================== raleway ===================*/
-.raleway-extralight {
+.open-sans-extralight {
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
   font-weight: 100;
   font-style: normal;
 }
 
-.raleway-light {
+.open-sans-light {
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
   font-weight: 200;
   font-style: normal;
 }
 
-.raleway-pre-normal {
+.open-sans-pre-normal {
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
 }
 
-.raleway-normal {
+.open-sans-normal {
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
 
-.raleway-normal-plus {
+.open-sans-normal-plus {
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
 }
 
-.raleway-semibold {
+.open-sans-semibold {
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
 }
 
-.raleway-bold {
+.open-sans-bold {
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
 }
 
-.raleway-extrabold {
+.open-sans-extrabold {
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
   font-weight: 800;
   font-style: normal;
 }
 
-.raleway-thik {
+.open-sans-thik {
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
   font-weight: 900;
@@ -137,7 +137,7 @@
 }
 
 html {
-  font-family: "Raleway", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 1rem;
 }
