@@ -334,6 +334,39 @@ main section .section-body .section-body-media figcaption {
   text-align: center;
 }
 
+.work-details, .projects-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.8rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #aaaaaa;
+}
+
+.work-details .work-responsibilities {
+  padding-left: 2rem;
+}
+
+.work-details .work-responsibilities li{
+  list-style-type: disc;
+
+}
+
+.work-details .work-tools, .project-details .work-tools{
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.work-details .work-tools li, .project-details .work-tools li {
+  height: 3rem;
+  width: 3rem;
+}
+
+.work-details .work-tools i, .project-details .work-tools i {
+  font-size: 2.9rem;
+}
+
 /*=================== footer styles ===================*/
 footer {
   margin-top: 20px;
