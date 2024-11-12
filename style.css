@@ -216,7 +216,6 @@ header #primary-navigation {
 header #primary-navigation ul {
   width: 100%;
   display: flex;
-  justify-content: right;
   align-items: flex-end;
   height: 2.5rem;
 }
@@ -300,6 +299,18 @@ main section .section-body .section-body-text p {
   line-height: 1.5rem;
 }
 
+main section .section-body .section-body-text p i {
+  font-size: 2rem;
+}
+
+main section .section-body .section-body-text p i:first-child {
+  font-size: 1.6rem;
+}
+
+main section .section-body .section-body-text p span {
+  margin-left: 1rem;
+}
+
 main section .section-body .section-body-media {
   display: flex;
   max-width: 250px;
@@ -341,4 +352,169 @@ footer p {
 /*=================== javascript manipulating styles ===================*/
 .active-link {
   color: lightseagreen !important;
+}
+
+
+/*=================== mobile design ===================*/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 629px) {
+  #back-to-top {
+    bottom: 10%;
+    right: 10%;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  header h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+  }
+
+  header #primary-navigation ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.5rem;
+  }
+
+  main #secondary-navigation ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  main #secondary-navigation ul li {
+    width: fit-content;
+  }
+
+  main section {
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #aaaaaa;
+  }
+
+  main section .section-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem
+  }
+
+  main section .section-title h2 {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #aaaaaa;
+  }
+
+  main section .section-body {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  main section .section-body .section-body-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+
+  footer {
+    border: none;
+    text-align: center;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 630px) and (max-width: 767px) {
+  #back-to-top {
+    bottom: 10%;
+    right: 10%;
+  }
+
+  header h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+  }
+  header #primary-navigation ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 4rem;
+  }
+
+  main #secondary-navigation ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  main section {
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #aaaaaa;
+  }
+
+  main section .section-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem
+  }
+
+  main section .section-title h2 {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #aaaaaa;
+  }
+
+  main section .section-body {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  main section .section-body .section-body-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+
+  footer {
+    border: none;
+    text-align: center;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+  }
+
+  header #primary-navigation ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 2.5rem;
+  }
+  main #secondary-navigation ul {
+    display: flex;
+    justify-content: flex-start;
+  }
 }
